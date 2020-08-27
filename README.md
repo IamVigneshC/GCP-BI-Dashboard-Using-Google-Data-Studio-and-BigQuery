@@ -49,7 +49,7 @@ Run a one-time query to pull the data for the last year, summarizing:
   
 FROM `
 
- ` `bigquery-public-data.san_francisco_trees.street_trees ` `
+ ` bigquery-public-data.san_francisco_trees.street_trees ` 
  
 ` WHERE
 
