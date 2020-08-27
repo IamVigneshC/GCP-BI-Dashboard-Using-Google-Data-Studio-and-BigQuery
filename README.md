@@ -23,9 +23,9 @@ Create a new dataset called Reports in your project. A separate dataset has a co
 ## Query the dashboard data
 
 Run a one-time query to pull the data for the last year, summarizing:
-•	the number of trees planted each month
+•	The number of trees planted each month
 
-•	which species of trees were planted
+•	Which species of trees were planted
 
 •	Who the caretaker of the trees is
 
@@ -72,7 +72,7 @@ GROUP BY
   site_info  `
   
  
- Click the More button, and select Query settings. Set a destination table for query results box, and create a name for the table, like Trees:
+Click the More button, and select Query settings. Set a destination table for query results box, and create a name for the table, like Trees:
   
 When the Query Settings has a table name in an existing dataset specified, along with the Write if empty destination option selected, a table will be created if it doesn't already exist, using the name you added.
 Accept the other default settings and click Save.
