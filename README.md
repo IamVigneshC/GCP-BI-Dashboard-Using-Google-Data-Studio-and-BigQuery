@@ -33,9 +33,8 @@ Run a one-time query to pull the data for the last year, summarizing:
 
 •	The tree site information.
 
-` SELECT
-
- TIMESTAMP_TRUNC(plant_date, MONTH) as plant_month,
+` SELECT `
+ `TIMESTAMP_TRUNC(plant_date, MONTH) as plant_month, `
  
   COUNT(tree_id) AS total_trees,
   
