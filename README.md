@@ -34,41 +34,42 @@ Run a one-time query to pull the data for the last year, summarizing:
 •	The tree site information.
 
 ` SELECT `
+
  `TIMESTAMP_TRUNC(plant_date, MONTH) as plant_month, `
  
-  COUNT(tree_id) AS total_trees,
+  ` COUNT(tree_id) AS total_trees, `
   
-  species,
+  ` species, `
   
-  care_taker,
+  `care_taker, `
   
-  address,
+  ` address, `
   
-  site_info
+  ` site_info `
   
-FROM `
+` FROM `
 
- ` bigquery-public-data.san_francisco_trees.street_trees ` 
+ ` 'bigquery-public-data.san_francisco_trees.street_trees' `
  
-` WHERE
+` WHERE `
 
-  address IS NOT NULL
+  `address IS NOT NULL `
   
-  AND plant_date >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 365 DAY)
+  ` AND plant_date >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 365 DAY) `
   
-  AND plant_date < TIMESTAMP_TRUNC(CURRENT_TIMESTAMP(), DAY)
+ ` AND plant_date < TIMESTAMP_TRUNC(CURRENT_TIMESTAMP(), DAY) `
   
-GROUP BY
+` GROUP BY `
 
-  plant_month,
+  ` plant_month, `
   
-  species,
+  ` species, `
   
-  care_taker,
+  ` care_taker, `
   
-  address,
+  ` address, `
   
-  site_info  `
+  ` site_info  `
   
  
 Click the More button, and select Query settings. Set a destination table for query results box, and create a name for the table, like Trees:
